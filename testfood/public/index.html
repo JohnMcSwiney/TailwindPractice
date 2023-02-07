@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="text-gray-500 font-body">
+
+    <body style="height: 3000px">
+        <div>
+            <p class="p-2 w-9/12">
+                <!--Container-->
+            <div class="md:grid-cols-3 grid-rows-3">
+                <!--Header-->
+                <div class="md:col-span-1  md:flex md:justify-end">
+                    <nav class="text-right ">
+                        <div class="flex justify-between">
+                            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                                <a href="/">TITLE</a>
+                            </h1>
+                            <div class="px-4 cursor-pointer md:hidden" id="burger">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="test-sm mt-6 hidden md:block" id="menu">
+                            <li class="text-gray-700 font-bold py-1">
+                                <a href="#" class="px-4 flex justify-end border-r-4 border-Trv_Blue">
+                                    <img src="img/rupert.png" alt="" class="ml-3 h-7 mr-3 object-cover">
+                                    <span>Home</span>
+
+
+                                </a>
+                            </li>
+                            <li class="py-1 border-r-4 border-white">
+                                <a href="#">
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="py-1 border-r-4 border-white">
+                                <a href="#">
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav><!-- Nav end-->
+
+                </div>
+                <!--Body-->
+                <main class="px-16 py-6 bg-gray-100 row-span-1 md:col-span-2">
+                    <div class="font-bold text-Trv_Blue flex justify-center md:justify-end">
+                        <a href="#" class="btn px-2 border-Trv_Blue md:border-2">Log in</a>
+                        <a href="#" class="btn px-2 border-Trv_Blue md:border-2 ">Sign up</a>
+                    </div>
+
+                    <header>
+                        <h2 class="text-grey-700 text-6xl font-semibold">Recipes</h2>
+                        <h3 class="text-2xl font-semibold">For everyone</h3>
+                    </header>
+                    <div class="overflow-scroll">
+
+                        <h4 class="font-bold mt-12 pb-2 border-b border-grey-600">Latest Recipes</h4>
+                        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                            <!--cards go here-->
+                            <div class="card">
+                                <img src="img/chicken.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold text-gray-800">Tangy Lemon Chicken</span>
+                                    <span class="block text-gray-600">Recipe by: FootLuvr68419</span>
+                                </div>
+                                <div class="badge">
+                                    <img class="w-3" src="./img/rupert.png">
+                                    <span class="ml-2">35 Mins</span>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="img/one-pot-meals-1666206954.jpeg" alt=""
+                                    class="w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold text-gray-800">Chicken Barf Suprise</span>
+                                    <span class="block text-gray-600">Recipe by: ibelieveinDog3120</span>
+                                </div>
+                                <div class="badge">
+                                    <img class="w-3" src="./img/IMG_20230118_224824.png">
+                                    <span class="ml-2">45 Mins</span>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="img/roast_turkey_dinner.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                                <div class="m-4">
+                                    <span class="title">Seasoned Roast Turkey</span>
+                                    <span class="creator">Recipe by: IcantbelieveItsButter76</span>
+                                </div>
+                                <div class="badge">
+                                    <img class="w-3 h-3.5" src="./img/IMG_20230118_224815.png">
+                                    <span class="ml-2">3 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="font-bold mt-12 pb-2 border-b  border-grey-600">Latest Recipies</h4>
+
+                        <div class="mt-8">
+                            <!-- cards go here-->
+                        </div>
+
+                        <div class="flex justify-center">
+                            <div class="btn text-Trv_Black">Load More</div>
+                        </div>
+                    </div>
+                </main>
+                <div class="flex justify-around">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-rewind-btn " viewBox="0 0 16 16">
+                        <path
+                            d="M7.21 5.093A.5.5 0 0 1 8 5.5v1.886l3.21-2.293A.5.5 0 0 1 12 5.5v5a.5.5 0 0 1-.79.407L8 8.614V10.5a.5.5 0 0 1-.79.407l-3.5-2.5a.5.5 0 0 1 0-.814l3.5-2.5Z" />
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4Z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-play-btn" viewBox="0 0 16 16">
+                        <path
+                            d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-fast-forward-btn" viewBox="0 0 16 16">
+                        <path
+                            d="M8.79 5.093A.5.5 0 0 0 8 5.5v1.886L4.79 5.093A.5.5 0 0 0 4 5.5v5a.5.5 0 0 0 .79.407L8 8.614V10.5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5Z" />
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4Z" />
+                    </svg>
+
+                </div>
+                </footer>
+
+            </div>
+            </p>
+        </div>
+        <!--Footer-->
+        <footer class="bg-Trv_Black
+             text-3xl text-white text-center
+             border-t-2 border-gray-600
+             shadow-2xl
+             fixed
+             inset-x-0
+             bottom-0
+             p-1 grid grid-flow-col h-38 s sm:h-38 md:h-28 lg:h-24 grid grid-rows-2 md:grid-rows-1           
+            ">
+             <div class="rounded bg-gray-700 p-3  row-span-1">
+                <div class="relative pt-1">
+                    <label for="customRange1" class="form-label">Example range</label>
+                    
+                    <div class="w-full bg-slate-900 h-1 mb-6 relative">
+                        <div class="h-1 w-full song_progress bg-gradient-to-r from-Trv_Blue to-Trv_Purple" style="width: 50%">
+                            
+                        </div>
+                        <input
+                            type="range"
+                            class="
+                              form-range appearance-none w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+                            id="customRange1"
+                          />
+                      </div>
+                </div>
+             </div>
+             <div class=" rounded bg-Trv_Blue p-2 row-span-1 h-16 md:hidden flex-row flex justify-around">
+                <div class="bot_nav_item_active"><h1>1</h1>
+                <p class="bot_nav_text">text</p></div>
+                <div class="bot_nav_item"><h1>2</h1>
+                    <p class="bot_nav_text">text</p></div>
+                <div class="bot_nav_item"><h1>3</h1>
+                    <p class="bot_nav_text">text</p></div>
+                
+             </div>
+            
+        </footer>
+    </body>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
